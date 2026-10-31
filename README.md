@@ -37,15 +37,15 @@ need a separate, secure solution.
 
 ## Current status
 
-The existing NixOS configuration is exposed as a flake for the `nixos` host.
+The existing NixOS configuration is exposed as a flake for the `E595` host.
 Home Manager and reusable multi-host configuration are planned but have not yet
 been migrated.
 
 To build or activate the current configuration:
 
 ```sh
-sudo nixos-rebuild build --flake ~/.config/nix-dotfiles#nixos
-sudo nixos-rebuild switch --flake ~/.config/nix-dotfiles#nixos
+sudo nixos-rebuild build --flake ~/.config/nix-dotfiles#E595
+sudo nixos-rebuild switch --flake ~/.config/nix-dotfiles#E595
 ```
 
 The Nixpkgs input currently points to the exact revision used before the flake
