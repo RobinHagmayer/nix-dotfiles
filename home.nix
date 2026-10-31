@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs, ... }:
 
 {
   home.username = "robin";
@@ -6,6 +6,15 @@
 
   # Compatibility defaults for this Home Manager configuration; do not routinely change.
   home.stateVersion = "26.05";
+
+  home.packages = with pkgs; [
+    wget
+    curl
+    pi-coding-agent
+    wl-clipboard
+    nodejs_26
+    pnpm_12
+  ];
 
   # Git is installed system-wide; only its personal configuration is managed here.
   programs.git = {

@@ -122,13 +122,7 @@
   # List packages installed in system profile.
   # You can use https://search.nixos.org/ to find more packages (and options).
   environment.systemPackages = with pkgs; [
-    wget
     git
-    curl
-    pi-coding-agent
-    wl-clipboard
-    nodejs_26
-    pnpm_12
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
