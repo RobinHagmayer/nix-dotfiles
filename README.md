@@ -50,6 +50,5 @@ sudo nixos-rebuild build --flake ~/.config/nix-dotfiles#E595
 sudo nixos-rebuild switch --flake ~/.config/nix-dotfiles#E595
 ```
 
-The Nixpkgs input currently points to the exact revision used before the flake
-migration. Changing it to track `nixos-unstable` and establishing an update
-workflow are still planned.
+The Nixpkgs input tracks `nixos-unstable`, while `flake.lock` pins the exact
+revision used for rebuilds. Establishing an update workflow is still planned.

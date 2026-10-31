@@ -2,8 +2,8 @@
   description = "Robin's NixOS configuration";
 
   inputs = {
-    # Match the Nixpkgs revision used by the system before the flake migration.
-    nixpkgs.url = "github:NixOS/nixpkgs/1c89083e451e891152365b799595cf7790a43325";
+    # Updates are deliberate; flake.lock pins the revision used for rebuilds.
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
 
     home-manager = {
       url = "github:nix-community/home-manager";
