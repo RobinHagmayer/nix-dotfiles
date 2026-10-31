@@ -14,7 +14,25 @@
     wl-clipboard
     nodejs_26
     pnpm_12
+
+    bat
+    fzf
+    ripgrep
+    fd
+    btop
+    neovim
+    ghq
+    go_1_27
+    ghostty
+    uv
+    jq
+    yq-go
+    eza
   ];
+
+  # Enable the shell hook so zoxide's `z` command can change directories.
+  programs.bash.enable = true;
+  programs.zoxide.enable = true;
 
   # Git is installed system-wide; only its personal configuration is managed here.
   programs.git = {
