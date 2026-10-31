@@ -117,6 +117,16 @@
   # Enable Podman and its system integration.
   virtualisation.podman.enable = true;
 
+  # Keep at least five generations and all generations from the past 30 days.
+  programs.nh = {
+    enable = true;
+    clean = {
+      enable = true;
+      dates = "weekly";
+      extraArgs = "--keep 5 --keep-since 30d --no-gcroots";
+    };
+  };
+
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
