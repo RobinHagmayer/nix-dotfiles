@@ -14,12 +14,12 @@
   outputs = { nixpkgs, home-manager, ... }: {
     nixosConfigurations.E595 = nixpkgs.lib.nixosSystem {
       modules = [
-        ./configuration.nix
+        ./hosts/E595/configuration.nix
         home-manager.nixosModules.home-manager
         {
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
-          home-manager.users.robin = import ./home.nix;
+          home-manager.users.robin = import ./home/robin.nix;
         }
       ];
     };
