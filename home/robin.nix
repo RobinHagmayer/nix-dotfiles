@@ -22,6 +22,7 @@
     btop
     neovim
     ghq
+    gh
     go_1_27
     ghostty
     uv
