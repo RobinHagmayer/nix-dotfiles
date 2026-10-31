@@ -38,8 +38,9 @@ need a separate, secure solution.
 ## Current status
 
 The existing NixOS configuration is exposed as a flake for the `E595` host.
-Home Manager and reusable multi-host configuration are planned but have not yet
-been migrated.
+Home Manager is integrated with a minimal configuration for `robin`. Git remains
+a system-wide package; personal Git settings will be managed separately.
+Reusable multi-host configuration is planned but has not yet been migrated.
 
 To build or activate the current configuration:
 
