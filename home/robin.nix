@@ -28,6 +28,7 @@
     jq
     yq-go
     eza
+    kdePackages.kate
   ];
 
   # Enable the shell hook so zoxide's `z` command can change directories.

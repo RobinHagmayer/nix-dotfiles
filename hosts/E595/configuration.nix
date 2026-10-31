@@ -89,9 +89,6 @@
     isNormalUser = true;
     description = "robin";
     extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [
-      kdePackages.kate
-    ];
   };
 
   # Install firefox.
