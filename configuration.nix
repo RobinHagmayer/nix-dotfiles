@@ -114,6 +114,9 @@
   # Install firefox.
   programs.firefox.enable = true;
 
+  # Enable Podman and its system integration.
+  virtualisation.podman.enable = true;
+
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
